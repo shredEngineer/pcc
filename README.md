@@ -1,3 +1,5 @@
+**NOTE: This project is VERY old. I haven't touched it in years.**
+
 Paul's Code Collection
 ======================
 
