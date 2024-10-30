@@ -11,8 +11,6 @@ PCC is licensed under GPLv3, see [LICENSE.md](doc/LICENSE.md). Anyone interested
 
 Copyright (C) 2016-2017 by Paul Wilhelm <<anfrage@paulwilhelm.de>>. (Please send bug reports to this address.)
 
-Visit http://paulwilhelm.de/pcc for further information and other cool stuff.
-
 
 Features
 ========
