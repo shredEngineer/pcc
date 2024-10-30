@@ -1,0 +1,40 @@
+# numbers.pcc
+# -----------
+# An example demonstrating the PCC syntax
+# Copyright (C) 2016-2017 by Paul Wilhelm
+
+PRINT "Hi!" ENDL ENDL
+
+
+# This shows the different usages of SET and PRINT with numbers in particular:
+# ----------------------------------------------------------------------------
+
+SET X = 0
+PRINT "Here, X = 0 is a number: " X ENDL
+
+SET X = "0"
+PRINT "Here, X = \"0\" is just a string: \"" X "\"" ENDL
+
+SET X = 1337
+PRINT "Here, X = 1337 is displayed as an integer number: " X ENDL
+
+SET X = 1337.0000001
+PRINT "Here, X = 1337.0000001 is also displayed as an integer number (cutting off fractional part < 10^-6): " X ENDL
+
+SET X = 1337.000001
+PRINT "Here, X = 1337.000001 is displayed as a floating point number (preserving fractional part >= 10^-6): " X ENDL ENDL
+
+
+# This shows the usage of MATH using RPN notation:
+# ------------------------------------------------
+
+SET X = 13
+SET Y = 37
+
+# "Look ma, no parentheses!" :-)
+MATH Z = Y X 100 * +
+
+PRINT "Using MATH: (" X " * 100) + " Y " = " Z ENDL ENDL
+
+
+PRINT "Bye!" ENDL

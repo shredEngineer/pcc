@@ -1,0 +1,40 @@
+# interactive.pcc
+# ---------------
+# An example demonstrating the PCC syntax
+# Copyright (C) 2016-2017 by Paul Wilhelm
+
+PRINT "Hi!" ENDL ENDL
+
+
+# This just shows the help screen:
+# --------------------------------
+
+PRINT "Let me help you out:" ENDL
+HELP
+PRINT ENDL
+
+
+# This shows the usage of INPUT with strings:
+# -------------------------------------------
+
+# Note: The input destination variable ("YourName") must be initialized to the desired type beforehand (any [empty] string will do)
+PRINT "May I ask for your name? Type it here: "
+SET YourName = ""
+INPUT YourName
+PRINT "Hello, " YourName "!" ENDL ENDL
+
+
+# This shows the usage of INPUT with numbers:
+# -------------------------------------------
+
+# Note: The input destination variable ("N") must be initialized to the desired type beforehand (any number will do)
+PRINT "Now, see what happens if you input a character instead of a number..." ENDL
+PRINT "By the way: Any characters following a number are discared, i.e. \"42FOO\" results in 42." ENDL ENDL
+
+PRINT "Please input a number N = "
+SET N = 0
+INPUT N
+PRINT "You entered N = " N ENDL ENDL
+
+
+PRINT "Bye!" ENDL

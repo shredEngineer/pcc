@@ -1,0 +1,25 @@
+# strings.pcc
+# -----------
+# An example demonstrating the PCC syntax
+# Copyright (C) 2016-2017 by Paul Wilhelm
+
+PRINT "Hi!" ENDL ENDL
+
+
+# This shows the usage of SET with strings using two different escaping sequences:
+# --------------------------------------------------------------------------------
+
+SET MyString = "I'm the left part!"
+
+SET MyString = MyString " ...and I'm the right part which was concatenated!"
+PRINT MyString ENDL
+
+SET EscapingDemo = "This is a backslash in double quotes: \"\\\"!"
+
+#TODO!!!! VEREINHEITLICHTES ESCAPING! ALS FSM-NEBENFUNKTION MIT ZUGRIFF AUF AKTUELLES TOKEN! FÜR STRING- *UUUND* ARRAY INDEX CONTENT MODE!!!
+SET EscapingDemo = EscapingDemo ENDL "Oh, one last thing: Here's how to escape square brackets: \[ \]"
+
+PRINT EscapingDemo ENDL ENDL
+
+
+PRINT "Bye!" ENDL

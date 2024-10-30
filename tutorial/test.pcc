@@ -1,0 +1,30 @@
+# test.pcc
+# --------
+# An example demonstrating the PCC syntax
+# Copyright (C) 2016-2017 by Paul Wilhelm
+
+PRINT "Hi!" ENDL ENDL
+
+
+# This shows the use of START to launch ("nest") another .pcc script:
+# -------------------------------------------------------------------
+
+PRINT "Let me start another PCC script for you:" ENDL ENDL
+
+# Paths here are relative to 'make_all.bat'
+# Note: Using slashes instead of backslashes is encouraged even on Windows
+
+START "tutorial/interactive.pcc"
+PRINT ENDL
+
+START "tutorial/numbers.pcc"
+PRINT ENDL
+
+START "tutorial/strings.pcc"
+PRINT ENDL
+
+START "tutorial/special.pcc"
+PRINT ENDL
+
+
+PRINT "Bye!" ENDL

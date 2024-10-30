@@ -1,0 +1,36 @@
+# special.pcc
+# -----------
+# An example demonstrating the PCC syntax
+# Copyright (C) 2016-2017 by Paul Wilhelm
+
+PRINT "Hi!" ENDL ENDL
+
+
+# This shows the usage of predefined variables:
+# ---------------------------------------------
+
+PRINT "It's " DATE " at " TIME "!" ENDL ENDL
+
+# Note: ENDL is a predefined constant containing "\r\n" on Windows or "\n" on Linux.
+
+
+# This shows the usage of SYSTEM to execute OS (Windows/Linux) commands:
+# ----------------------------------------------------------------------
+
+PRINT "This is what your current directory looks like:" ENDL
+SYSTEM "dir"
+PRINT ENDL
+
+
+# This shows the usage of DUMP to list all currently used variables:
+# ------------------------------------------------------------------
+
+SET X = 420
+SET Y = 42
+SET Z = 1337
+PRINT "Finally, dumping all of our variables we have used so far:" ENDL
+DUMP
+PRINT ENDL
+
+
+PRINT "Bye!" ENDL
